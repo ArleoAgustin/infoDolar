@@ -1,11 +1,25 @@
-.containerCard{
+.containerCard {
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
-}
+  }
 
-.h2{
+  .h2 {
     text-align: center;
     font-size: 185%;
+  }
+
+@media (min-width: 992px) {
+  .containerCard {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .h2 {
+    text-align: center;
+    font-size: 185%;
+  }
 }

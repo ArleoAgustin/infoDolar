@@ -1,33 +1,37 @@
-.price{
+.price {
     display: flex;
     flex-direction: column;
-}
-
-.description{
-    
-}
-
-.titleDescription{
-    width: 52%;
-}
-
-.containerCard{
-    opacity: 0;
-    transition: opacity 0.6s ease-in-out;
-    display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.card{
+  .description {
+  }
+
+  .titleDescription {
+    width: 91%;
     display: flex;
     flex-direction: column;
-    width: 63%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .containerCard {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 76%;
     /* align-items: center; */
     /* justify-content: space-around; */
     border: 1.5px solid #edcaca;
-    border-radius: 40px;
-     padding: 2%;
+    border-radius: 25px;
+    padding: 2%;
     box-shadow: rgba(0, 0, 0, 0.348) 0px 3px 8px;
     margin-bottom: 4%;
     opacity: 0;
@@ -35,12 +39,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-   
-}
+  }
 
-
-
-.visible {
+  .visible {
     opacity: 1;
   }
 
@@ -48,16 +49,89 @@
     opacity: 0;
   }
 
-.span{
+  .span {
+    text-align: end;
+    margin-right: 5%;
+    font-size: 60%;
+    color: grey;
+  }
+
+  .contentCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .title {
+    border-bottom: 1px solid;
+    width: 94%;
+    text-align: center;
+  }
+
+@media (min-width: 992px) {
+  .price {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .description {
+  }
+
+  .titleDescription {
+    width: 52%;
+  }
+
+  .containerCard {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 63%;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+    border: 1.5px solid #edcaca;
+    border-radius: 40px;
+    padding: 2%;
+    box-shadow: rgba(0, 0, 0, 0.348) 0px 3px 8px;
+    margin-bottom: 4%;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .visible {
+    opacity: 1;
+  }
+
+  .hidden {
+    opacity: 0;
+  }
+
+  .span {
     text-align: end;
     margin-right: 5%;
     font-size: 84%;
     color: grey;
-}
+  }
 
-.contentCard{
+  .contentCard {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+  }
+
+  .title {
+    border-bottom: 1px solid;
+    width: 94%;
+  }
 }

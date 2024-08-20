@@ -1,21 +1,45 @@
-.containerHeader{
+.containerHeader {
   display: flex;
-  padding: 1% 0%;
+  padding: 3% 0%;
   align-items: center;
-  background-color: #2B803E;
+  background-color: #2b803e;
   margin-bottom: 2%;
   justify-content: space-between;
   position: fixed; /* Fija el Header en la parte superior */
-  top: 0;          /* Colócalo en la parte superior */
-  left: 0;         /* Alineación a la izquierda */
-  width: 100%;     /* Ancho completo del viewport */
+  top: 0; /* Colócalo en la parte superior */
+  left: 0; /* Alineación a la izquierda */
+  width: 100%; /* Ancho completo del viewport */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para destacar el Header */
-  z-index: 1000;   /* Asegúrate de que esté encima de otros elementos */
+  z-index: 1000; /* Asegúrate de que esté encima de otros elementos */
 }
 
-.iconTitle{
+.iconTitle {
   display: flex;
+  flex-direction: row;
+  width: 60%;
+  margin-left: 1.5%;
+}
+
+@media (min-width: 992px) {
+  .containerHeader {
+    display: flex;
+    padding: 1% 0%;
+    align-items: center;
+    background-color: #2b803e;
+    margin-bottom: 2%;
+    justify-content: space-between;
+    position: fixed; /* Fija el Header en la parte superior */
+    top: 0; /* Colócalo en la parte superior */
+    left: 0; /* Alineación a la izquierda */
+    width: 100%; /* Ancho completo del viewport */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para destacar el Header */
+    z-index: 1000; /* Asegúrate de que esté encima de otros elementos */
+  }
+
+  .iconTitle {
+    display: flex;
     flex-direction: row;
     width: 22%;
     margin-left: 1.5%;
+  }
 }

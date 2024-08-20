@@ -8,6 +8,24 @@
     margin: 1.5% 0%;
     color: white;
     text-transform: uppercase;
+    font-size: 138%;
+}
+
+
+.containerTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 992px){
+
+.title{
+    text-align: center;
+    width: fit-content;
+    margin: 1.5% 0%;
+    color: white;
+    text-transform: uppercase;
     font-size: 230%;
 }
 
@@ -18,3 +36,4 @@
     justify-content: center;
 }
 
+}

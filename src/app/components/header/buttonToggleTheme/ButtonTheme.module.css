@@ -1,5 +1,4 @@
-
-.themeToggleButtonLight{
+.themeToggleButtonLight {
   border: none;
   background-color: rgb(57, 54, 54);
   border-radius: 4px;
@@ -11,11 +10,11 @@
   padding: 0.9%;
 }
 
-.themeToggleButtonLight:hover{
+.themeToggleButtonLight:hover {
   background-color: #2f3031;
 }
 
-.themeToggleButtonDark{
+.themeToggleButtonDark {
   border: none;
   background-color: rgb(245 245 245);
   border-radius: 4px;
@@ -27,6 +26,40 @@
   padding: 0.9%;
 }
 
-.themeToggleButtonDark:hover{
+.themeToggleButtonDark:hover {
   background-color: #ebebeb;
+}
+
+@media (min-width: 992px) {
+  .themeToggleButtonLight {
+    border: none;
+    background-color: rgb(57, 54, 54);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.9%;
+  }
+
+  .themeToggleButtonLight:hover {
+    background-color: #2f3031;
+  }
+
+  .themeToggleButtonDark {
+    border: none;
+    background-color: rgb(245 245 245);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.9%;
+  }
+
+  .themeToggleButtonDark:hover {
+    background-color: #ebebeb;
+  }
 }
