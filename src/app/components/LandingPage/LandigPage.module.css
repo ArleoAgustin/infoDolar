@@ -27,7 +27,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 30%;
 }
 
 .loading {
@@ -62,7 +61,7 @@
   }
 
   .pageContent {
-    margin-top: 10%; /* Ajusta el margen superior según la altura del Header */
+    
   }
 
   .loading {

@@ -42,6 +42,7 @@ function Carousel({ data }: DataProps) {
 
   return (
     <div className={style.carouselContainer}>
+      <h2 className={style.h2}>Cotizaciones del día</h2>
       <Slider className={style.slickslide} {...settings}>
         {data.map((dolar, index) => (
           <CardDolar key={index} data={dolar} loading={false} error={null} />

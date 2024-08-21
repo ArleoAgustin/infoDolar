@@ -10,12 +10,22 @@ body{
 :root {
   --background-color: #000000e8;
   --text-color: #ffffff;
+  --icon-color: #ffffff; /* Color para los íconos en el tema oscuro */
+  --icon-hover-color: #aaaaaa; /* Color para íconos al pasar el mouse en tema oscuro */
 }
+
+[data-theme='dark'] {
+  --icon-color: #ffffff; /* Color para los íconos en el tema oscuro */
+  --icon-hover-color: #aaaaaa; /* Color para íconos al pasar el mouse en tema oscuro */
+}
+
 
 /* Estilos para el modo oscuro */
 [data-theme='light'] {
   --background-color: #ffffff;
   --text-color: #000000;
+  --icon-color: #000000; /* Color para los íconos en el tema claro */
+  --icon-hover-color: #555555; /* Color para íconos al pasar el mouse en tema claro */
 }
 
 /* Aplicar las variables en el cuerpo */

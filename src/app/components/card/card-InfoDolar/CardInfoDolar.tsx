@@ -20,7 +20,8 @@ function CardInfoDolar({ nombre, description, compra, venta, fechaActualizacion 
 
  
   return (
-    <div
+    <div 
+      id={nombre}
       ref={ref}
       className={`${styles.card} ${inView ? styles.visible : styles.hidden}`}
     >

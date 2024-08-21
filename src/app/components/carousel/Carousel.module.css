@@ -20,16 +20,27 @@
     font-size: 14px;
   }
 
+  .h2{
+    text-align: center;
+    margin: 0% 0%;
+    font-size: 182%;
+    margin-bottom: 6%;
+}
+
   
   .h3{
     color: white;
   }
 
   .carouselContainer {
+    margin-top: 19%;
     width: 100%;
     overflow: hidden;
     position: relative;
-    padding: 10% 16%;
+    padding: 16% 13%;
+    background: linear-gradient(180deg, #2b803e, #2b803e, #00000000);
+    color: white;
+    height: 541px;
   }
   
   .slickslide {

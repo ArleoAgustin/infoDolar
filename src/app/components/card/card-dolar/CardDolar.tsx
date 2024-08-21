@@ -13,12 +13,22 @@ interface DolarProps {
 }
 
 function CardDolar({ data, loading, error }: DolarProps) {
+
   if (loading) return <div className={styles.loading}>Loading...</div>;
   if (error) return <div className={styles.error}>Error: {error}</div>;
-
+  const handleClick = () => {
+  const targetElement = document.getElementById(data.nombre);
+    if (targetElement) {
+      // Desplazarse al elemento objetivo y centrarlo
+      targetElement.scrollIntoView({
+        behavior: "smooth",  // Desplazamiento suave
+        block: "center",     // Centrar el elemento en la pantalla
+      });
+    }
+  }
   return (
     <>
-      <div className={styles.card}>
+      <div onClick={handleClick} className={styles.card}>
       <h3
         className={
           data.nombre === 'Contado con liquidación'

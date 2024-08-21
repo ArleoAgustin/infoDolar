@@ -13,9 +13,10 @@ h5{
 
 
 .card {
+    background-color: #3761df;
     text-align: center;
     margin: 2% 0.8%;
-    background-color: #ffffff00;
+    
     width: 174px;
     font-size: 13px;
     padding: 1% 1%;
@@ -29,13 +30,10 @@ h5{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.6) 0px 8px 16px;
-}
+
 
 .venta{
+    border: 1px solid #571919;
     background-color: #711919;
     color: white;
     width: 116px;
@@ -43,9 +41,12 @@ h5{
     text-align: center;
     border-radius: 13px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 
 .compra{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    border: 1px solid #0f7225;
     background-color: #2b803e;
     color: white;
     width: 116px;
@@ -72,6 +73,7 @@ h5{
 
 
 .card {
+
     text-align: center;
     margin: 2% 0.8%;
     background-color: #ffffff00;

@@ -22,10 +22,11 @@ function PriceOfDay({ data, loading, error }: DataProps) {
 
   return (
     <>
-      <h2 className={style.h2}>Cotizaciones del día</h2>
+      
 
       {isMobile ? (
         // Renderiza el carrusel solo si está en un dispositivo móvil
+      
         <Carousel data={data} />
       ) : (
         <div className={style.containerCards}>
