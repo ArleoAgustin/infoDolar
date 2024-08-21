@@ -132,6 +132,7 @@
 
   .title {
     border-bottom: 1px solid;
-    width: 94%;
+    width: 100%;
+    text-align: justify;
   }
 }

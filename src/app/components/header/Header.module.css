@@ -9,7 +9,7 @@
   top: 0; /* Colócalo en la parte superior */
   left: 0; /* Alineación a la izquierda */
   width: 100%; /* Ancho completo del viewport */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para destacar el Header */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
   z-index: 1000; /* Asegúrate de que esté encima de otros elementos */
 }
 

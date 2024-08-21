@@ -11,6 +11,10 @@
     font-size: 138%;
 }
 
+.title:hover{
+    cursor: pointer;
+}
+
 
 .containerTitle{
     display: flex;

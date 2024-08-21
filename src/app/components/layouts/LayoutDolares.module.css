@@ -8,6 +8,31 @@
   .h2 {
     text-align: center;
     font-size: 185%;
+    margin-bottom: 35%;
+  }
+
+  .containerH2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 38% 0%;
+  }
+
+.IconArrowDown{
+    animation: moveDown 1.1s infinite;
+}
+
+@keyframes moveDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px); /* Desplazamiento hacia abajo */
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
 
 @media (min-width: 992px) {
@@ -18,8 +43,22 @@
     flex-direction: column;
   }
 
+  .IconArrowDown{
+    scale: 2;
+  }
+
   .h2 {
     text-align: center;
     font-size: 185%;
+    margin-bottom: 12%;
+  }
+
+  .containerH2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0% 0%;
+    margin-bottom: 20%;
   }
 }

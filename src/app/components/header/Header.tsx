@@ -5,10 +5,11 @@ import ButtonTheme from "./buttonToggleTheme/ButtonTheme";
 
 export function Header() {
 
+
   return (
     <>
     <div className={style.containerHeader}>
-    <div className={style.iconTitle}>
+    <div  className={style.iconTitle}>
     <Icon />  
     <Title/>
     </div>
