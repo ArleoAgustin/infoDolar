@@ -1,0 +1,47 @@
+.carousel {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .card {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .card p {
+    font-size: 14px;
+  }
+
+  
+  .h3{
+    color: white;
+  }
+
+  .carouselContainer {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 10% 16%;
+  }
+  
+  .slickslide {
+    display: flex;
+    justify-content: center; /* Centra el contenido dentro de cada diapositiva */
+    align-items: center;     /* Centra el contenido verticalmente */
+    text-align: -webkit-center;
+  }
+  
+  .slick-slide .card {
+    margin: 0 auto; /* Asegura que las tarjetas se centren dentro de la diapositiva */
+    display: flex;
+    justify-content: center; /* Centra el contenido de la tarjeta */
+  }
+  

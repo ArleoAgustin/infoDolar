@@ -1,0 +1,117 @@
+
+h3{
+    font-size: 140%;
+}
+
+h5{
+    font-size: 100%;
+}
+
+.specialH3{
+    margin-top: 11px;
+}
+
+
+.card {
+    text-align: center;
+    margin: 2% 0.8%;
+    background-color: #ffffff00;
+    width: 174px;
+    font-size: 13px;
+    padding: 1% 1%;
+    border: 0.5px solid #fff9f978;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.348) 0px 3px 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 8px 16px;
+}
+
+.venta{
+    background-color: #711919;
+    color: white;
+    width: 116px;
+    padding: 9% 0%;
+    text-align: center;
+    border-radius: 13px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.compra{
+    background-color: #2b803e;
+    color: white;
+    width: 116px;
+    padding: 9% 0%;
+    text-align: center;
+    border-radius: 13px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+@media (min-width: 992px) {
+
+h3{
+    font-size: 140%;
+}
+
+h5{
+    font-size: 100%;
+}
+
+.specialH3{
+    margin-top: -7px;
+}
+
+
+.card {
+    text-align: center;
+    margin: 2% 0.8%;
+    background-color: #ffffff00;
+    width: 174px;
+    font-size: 13px;
+    padding: 1% 1%;
+    border: 0.5px solid #fff9f978;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.348) 0px 3px 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 8px 16px;
+}
+
+.venta{
+    background-color: #711919;
+    color: white;
+    width: 116px;
+    padding: 9% 0%;
+    text-align: center;
+    border-radius: 13px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.compra{
+    background-color: #2b803e;
+    color: white;
+    width: 116px;
+    padding: 9% 0%;
+    text-align: center;
+    border-radius: 13px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+}

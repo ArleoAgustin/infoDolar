@@ -23,7 +23,11 @@
 }
 
 .pageContent {
-  margin-top: 23%; /* Ajusta el margen superior según la altura del Header */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30%;
 }
 
 .loading {
