@@ -15,8 +15,11 @@ body{
 }
 
 [data-theme='dark'] {
+  --background-color: #000000e8;
   --icon-color: #ffffff; /* Color para los íconos en el tema oscuro */
   --icon-hover-color: #aaaaaa; /* Color para íconos al pasar el mouse en tema oscuro */
+  --text-color: #ffffff;
+  --colorCardDolar: #00000075;
 }
 
 
@@ -26,6 +29,7 @@ body{
   --text-color: #000000;
   --icon-color: #000000; /* Color para los íconos en el tema claro */
   --icon-hover-color: #555555; /* Color para íconos al pasar el mouse en tema claro */
+  --colorCardDolar: #ffffff;
 }
 
 /* Aplicar las variables en el cuerpo */

@@ -4,9 +4,7 @@ import PriceOfDay from "../section/priceOfDay/PriceOfDay";
 import style from "./LayoutDolares.module.css";
 import { IconArrowDown,  } from '@tabler/icons-react';
 
-
 function LayoutsDolars() {
-
 
 
   return (
@@ -20,6 +18,7 @@ function LayoutsDolars() {
 
           <PriceOfDay data={data} loading={loading} error={error}/>
 
+          <div className={style.containerLayout}>
 
           <div className={style.containerH2}>
 
@@ -39,6 +38,9 @@ function LayoutsDolars() {
                 />
               ))}
             </div>
+
+            </div>
+            
           </>
         );
       }}

@@ -5,7 +5,6 @@ import LayoutsDolars  from "../layouts/LayoutsDolars";
 import styles from "./LandigPage.module.css";
 import { useTheme } from '../../context/ThemeContext'; 
 import ScrollToTopButton from '../Button/ScrollToTopButton';
-
 function LandingPage() {  
  
    // Cambia el atributo `data-theme` del documento según el tema actual

@@ -1,21 +1,18 @@
 import React, { useEffect, useState } from 'react';
 
-
-
 interface DatesDolar {
   nombre: string;
   compra: number;
   venta: number;
   description: string;
-  fechaActualizacion: string
+  fechaActualizacion: string;
 }
 
 interface DataProviderProps {
   children: (data: DatesDolar[], loading: boolean, error: string | null) => React.ReactNode;
 }
 
-const descriptions = new Map();
-
+const descriptions = new Map<string, string>();
 
 const dOficial = "El dólar oficial en Argentina es el tipo de cambio que establece el gobierno para la compra y venta de dólares estadounidenses en el mercado oficial. Este valor es regulado por el Banco Central de la República Argentina (BCRA) y suele ser utilizado en transacciones oficiales, como la importación y exportación de bienes. El dólar oficial generalmente es más bajo que otros tipos de cambio en el país, como el dólar blue (mercado paralelo). Debido a restricciones cambiarias, muchas operaciones no pueden realizarse al tipo de cambio oficial, lo que lleva a la existencia de diferentes cotizaciones en el mercado."
 const dBlue = "El dólar blue es el tipo de cambio del dólar estadounidense en el mercado informal o paralelo de Argentina. Se diferencia del dólar oficial, ya que no está regulado por el Banco Central. Su valor es generalmente más alto debido a restricciones cambiarias y controles de capital que limitan el acceso al dólar oficial. El dólar blue refleja la oferta y demanda en el mercado negro y es utilizado para transacciones no oficiales."
@@ -33,12 +30,8 @@ descriptions.set('Mayorista',dM);
 descriptions.set('Cripto', dCripto)
 descriptions.set('Tarjeta', dTarjeta)
 
-
 function DataProvider({ children }: DataProviderProps) {
-
   const [data, setData] = useState<DatesDolar[]>([]);
-
-  
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -51,13 +44,16 @@ function DataProvider({ children }: DataProviderProps) {
         return response.json();
       })
       .then((data) => {
-        const mappedData = data.map((dolar: DatesDolar) => ({
-          nombre: dolar.nombre,
-          compra: dolar.compra,
-          venta: dolar.venta,
-          description: descriptions.get(dolar.nombre),
-          fechaActualizacion: dolar.fechaActualizacion
-        }));
+        const mappedData = data
+          .map((dolar: DatesDolar) => ({
+            nombre: dolar.nombre,
+            compra: dolar.compra,
+            venta: dolar.venta,
+            description: descriptions.get(dolar.nombre),
+            fechaActualizacion: dolar.fechaActualizacion,
+          }))
+          .filter((dolar : DatesDolar) => dolar.nombre !== 'Contado con liquidación');
+
         setData(mappedData);
         setLoading(false);
       })

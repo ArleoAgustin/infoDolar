@@ -26,12 +26,6 @@
   .card {
     display: flex;
     flex-direction: column;
-    width: 76%;
-    /* align-items: center; */
-    /* justify-content: space-around; */
-    border: 1.5px solid #edcaca;
-    border-radius: 25px;
-    padding: 2%;
     box-shadow: rgba(0, 0, 0, 0.348) 0px 3px 8px;
     margin-bottom: 4%;
     opacity: 0;
@@ -39,6 +33,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10% 0%;
   }
 
   .visible {
@@ -65,8 +60,7 @@
 
   .title {
     border-bottom: 1px solid;
-    width: 94%;
-    text-align: center;
+    width: 100%;
   }
 
 @media (min-width: 992px) {
@@ -93,6 +87,7 @@
   .card {
     display: flex;
     flex-direction: column;
+    background-color: var(--colorCardDolar);
     width: 63%;
     /* align-items: center; */
     /* justify-content: space-around; */

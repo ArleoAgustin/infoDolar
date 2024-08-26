@@ -38,6 +38,7 @@ function CardInfoDolar({ nombre, description, compra, venta, fechaActualizacion 
           <PriceDolar compra={compra} venta={venta} />
         </div>
       </div>
+
       <span className={styles.span}>
         <FormattedDate fecha={fechaActualizacion} />
       </span>

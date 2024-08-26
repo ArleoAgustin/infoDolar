@@ -1,4 +1,9 @@
 
+
+.h2{
+    text-align: left;
+}
+
 @media (min-width: 992px) {
 h2{
     text-align: justify;

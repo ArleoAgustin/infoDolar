@@ -1,9 +1,8 @@
-import CardDolar from "../../card/card-dolar/CardDolar";
 import Carousel from "../../carousel/Carousel";
-import style from "./PriceOfDay.module.css";
 import { useMediaQuery } from "react-responsive";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import LayoutDesktop from '../../layouts/layoutPriceOfDay/LayoutPriceOfDay'
 
 interface DatesDolar {
   nombre: string;
@@ -29,16 +28,7 @@ function PriceOfDay({ data, loading, error }: DataProps) {
       
         <Carousel data={data} />
       ) : (
-        <div className={style.containerCards}>
-          {data.map((dolar, index) => (
-            <CardDolar
-              key={index}
-              data={dolar}
-              loading={loading}
-              error={error}
-            />
-          ))}
-        </div>
+        <LayoutDesktop data={data} error={error} loading={loading}/>
       )}
     </>
   );

@@ -1,6 +1,5 @@
 .containerCard {
     justify-content: center;
-    align-items: center;
     display: flex;
     flex-direction: column;
   }
@@ -13,11 +12,12 @@
 
   .containerH2{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 7% 0%;
+    flex-direction: column;
+    margin-bottom: 27%;
   }
+
 
 .IconArrowDown{
     animation: moveDown 1.1s infinite;
@@ -49,8 +49,9 @@
 
   .h2 {
     font-size: 185%;
-    margin-bottom: 20%;
+    margin-bottom: 2%;
     text-align: center;
+    margin-top: 2%;
   }
 
   .containerH2{
@@ -64,6 +65,10 @@
   }
 
 
-
+.containerLayout{
+  width: 100%;
+  background: linear-gradient(0deg, var(--background-color), #3f9b52, var(--background-color));
+  padding-bottom: 21%;
+}
 
 }
