@@ -1,24 +1,25 @@
 .compra {
-  margin-right: 7%;
-  background-color: #2b803e;
-  color: white;
-  width: 85px;
   display: flex;
-  justify-content: center;
-  font-size: 13px;
+  flex-direction: column;
+  font-weight: 300;
+  font-size: 81%;
   padding: 4% 6%;
-  align-items: center;
+  width: fit-content;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 13px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .venta {
-  background-color: #711919;
-  color: white;
-  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  font-size: 81%;
   padding: 4% 6%;
-  width: 85px;
+  width: fit-content;
   text-align: center;
   display: flex;
   align-items: center;
@@ -32,23 +33,19 @@
   flex-direction: row;
   font-size: 109%;
   width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
-.compra:hover {
-  cursor: pointer;
-  transform: scale(1.2);
-}
 
-.venta:hover {
-  transform: scale(1.2);
-  cursor: pointer;
+.span{
+  font-weight: 600;
+    font-size: 200%;
 }
 
 @media (min-width: 992px) {
   .compra {
     margin-right: 7%;
-    background-color: #2b803e;
-    color: white;
     width: 116px;
     padding: 4% 6%;
     text-align: center;
@@ -57,8 +54,7 @@
   }
 
   .venta {
-    background-color: #711919;
-    color: white;
+  
     width: 116px;
     padding: 4% 6%;
     text-align: center;

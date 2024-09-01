@@ -4,24 +4,35 @@
     justify-content: space-around;
 }
 
+.span{
+    font-weight: 700;
+    font-size: 23px;
+}
+
 .containerInfo{
     
-    width: 100%;
+    width: 90%;
     text-align: center;
-    border: 1px solid;
-    padding: 21px;
-    margin: 1%;
+    padding: 6px;
     background-color: var(--colorCardDolar);
     border: none;
     border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.containerInfo:hover{
+    background-color: var(--hoverCard);
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .compra{
     margin-right: 7%;
-    background-color: #2b803e;
-    color: white;
+    color: var(--text-color);
     width: 116px;
+    font-size: 86%;
     padding: 4% 6%;
     text-align: center;
     border-radius: 13px;
@@ -29,9 +40,9 @@
 }
 
 .venta{
-    background-color: #711919;
-    color: white;
+    color: var(--text-color);
     width: 116px;
+    font-size: 86%;
     padding: 4% 6%;
     text-align: center;
     border-radius: 13px;
@@ -39,5 +50,15 @@
 }
 
 .h4{
-    font-size: 110%;
+    font-size: 100%;
+    margin: 4% 0% 0% 0%;
+    font-weight: 600;
+}
+
+.verMas{
+    text-align: center;
+    font-size: 69%;
+    color: #a19a9a;
+    margin: 0;
+    
 }

@@ -12,8 +12,8 @@ function PriceDolar({compra, venta}: PriceDolarProps){
     return(
         <>
         <div className={style.containerPrices}>
-        <h5 className={style.compra}>Compra ${compra}</h5>
-        <h5 className={style.venta}>Venta ${venta}</h5>
+        <h5 className={style.compra}>Compra <span className={style.span}>${compra}</span></h5>
+        <h5 className={style.venta}>Venta <span className={style.span}>${venta}</span></h5>
         </div>
         </>
     )

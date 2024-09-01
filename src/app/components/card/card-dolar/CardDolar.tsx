@@ -38,8 +38,11 @@ function CardDolar({ data, loading, error }: DolarProps) {
       >
         Dolar {data.nombre}
       </h3>
-        <h5 className={styles.compra}>Compra ${data.compra}</h5>
-        <h5 className={styles.venta}>Venta ${data.venta}</h5>
+      <div className={styles.sellBuy}>
+        <h5 className={styles.compra}>Compra <span className={styles.span}>${data.compra}</span></h5>
+        <h5 className={styles.venta}>Venta <span className={styles.span}>${data.venta}</span></h5>
+      </div>
+      <p className={styles.verMas}>Presionar para ver detalles</p>
       </div>
     </>
   );

@@ -38,9 +38,8 @@
     overflow: hidden;
     position: relative;
     padding: 16% 13%;
-    background: linear-gradient(180deg, #2b803e, #2b803e, #00000000);
     color: white;
-    height: 541px;
+    height: 440px;
   }
   
   .slickslide {

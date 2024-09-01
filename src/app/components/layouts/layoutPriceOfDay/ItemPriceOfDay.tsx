@@ -15,6 +15,16 @@ interface DolarProps {
   
   function ItemPriceOfDay({ nombre, compra, venta, loading, error }: Props) {
 
+    const handleClick = () => {
+      const targetElement = document.getElementById(nombre);
+        if (targetElement) {
+          // Desplazarse al elemento objetivo y centrarlo
+          targetElement.scrollIntoView({
+            behavior: "smooth",  // Desplazamiento suave
+            block: "center",     // Centrar el elemento en la pantalla
+          });
+        }
+      }
 
     
     if (error) {
@@ -34,17 +44,21 @@ interface DolarProps {
     }
   
     return (
-      <div className={style.containerInfo}>
+      <>
+      <div onClick={handleClick} className={style.containerInfo}>
         <h4 className={style.h4}>Dólar {nombre}</h4>
         <div className={style.containerSellBuy}>
         <p className={style.venta}>
-          Venta <span>${venta}</span>
+          Venta <span className={style.span} >${venta}</span>
         </p>
         <p className={style.compra}>
-          Compra <span>${compra}</span>
+          Compra <span className={style.span} >${compra}</span>
         </p>
+
         </div>
+        <p className={style.verMas}>Presionar para ver detalles</p>
       </div>
+      </>
     );
   }
   

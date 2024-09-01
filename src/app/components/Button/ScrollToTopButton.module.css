@@ -2,8 +2,8 @@
   position: fixed;
   bottom: 20px; /* Ajusta la distancia desde la parte inferior */
   right: 20px; /* Ajusta la distancia desde la parte derecha */
-  background-color: #2b803e;
-  color: white; /* Color del ícono */
+  background-color: var(--colorButtonScroll);
+  color: var(--background-color);
   border: none;
   border-radius: 59%; /* Botón redondo */
   padding: 10px;
@@ -25,8 +25,8 @@
     position: fixed;
     bottom: 20px; /* Ajusta la distancia desde la parte inferior */
     right: 20px; /* Ajusta la distancia desde la parte derecha */
-    background-color: #2b803e;
-    color: white; /* Color del ícono */
+    background-color: var(--colorButtonScroll);
+    color: var(--background-color);
     border: none;
     border-radius: 59%; /* Botón redondo */
     padding: 10px;
@@ -39,7 +39,7 @@
   }
 
   .scrollToTopButton:hover {
-    background-color: #194f25;
+    background-color: var(--icon-hover-color);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   }
 }

@@ -18,6 +18,7 @@ function LandingPage() {
   return (
     <>
       <Header />
+      
     <div className={styles.pageContent}>
       <LayoutsDolars/>
 

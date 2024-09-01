@@ -18,8 +18,7 @@
 .containerFooter{
   text-align: center;
   color: var(--text-color);
-  padding: 15% 0%;
-  background: linear-gradient(180deg, var(--background-color), var(--background-color), var(--background-color));
+  padding: 5% 0%;
 }
 
 }

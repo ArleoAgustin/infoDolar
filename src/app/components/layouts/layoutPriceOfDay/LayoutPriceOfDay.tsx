@@ -16,7 +16,6 @@ interface DataProps {
 function LayoutPriceOfDay({ data, error, loading }: DataProps) {
   return (
     <div className={style.containerPriceOfDAyDesktop}>
-      <h2 className={style.h2}>Cotizaciones del día</h2>
 
       <div className={style.container}>
         {data.map((dolar, index) => (

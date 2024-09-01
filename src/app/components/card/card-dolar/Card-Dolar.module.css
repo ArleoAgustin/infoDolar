@@ -1,6 +1,6 @@
 
 h3{
-    font-size: 140%;
+    font-size: 125%;
 }
 
 h5{
@@ -13,10 +13,10 @@ h5{
 
 
 .card {
-    background-color: #3761df;
+    background-color: var(--colorCardDolar);
     text-align: center;
-    margin: 2% 0.8%;
-    
+    margin: 4% 0.8%;
+    color: var(--text-color);
     width: 174px;
     font-size: 13px;
     padding: 1% 1%;
@@ -30,30 +30,44 @@ h5{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
+.verMas{
+    font-size: 80%;
+    color: grey;
+}
 
 .venta{
-    border: 1px solid #571919;
-    background-color: #711919;
-    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 100%;
+    font-weight: 300;
+    
     width: 116px;
     padding: 9% 0%;
     text-align: center;
     border-radius: 13px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 
 .compra{
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
-    border: 1px solid #0f7225;
-    background-color: #2b803e;
-    color: white;
+
+    display: flex;
+    flex-direction: column;
+    font-size: 100%;
+    font-weight: 300;
     width: 116px;
     padding: 9% 0%;
     text-align: center;
     border-radius: 13px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sellBuy{
+
+}
+
+.span{
+    font-weight: 600;
+    font-size: 200%;
 }
 
 

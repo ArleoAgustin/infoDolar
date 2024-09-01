@@ -6,8 +6,9 @@
 
   .h2 {
     text-align: center;
-    font-size: 185%;
-    margin-bottom: 15%;
+    font-size: 126%;
+    margin-top: 11%;
+    margin-bottom: 5%;
   }
 
   .containerH2{
@@ -15,7 +16,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 27%;
+    margin-bottom: 16%;
   }
 
 
@@ -44,14 +45,13 @@
   }
 
   .IconArrowDown{
-    scale: 2;
+    scale: 1.6;
   }
 
   .h2 {
-    font-size: 185%;
-    margin-bottom: 2%;
+    font-size: 160%;
+    margin-bottom: 1%;
     text-align: center;
-    margin-top: 2%;
   }
 
   .containerH2{
@@ -61,14 +61,14 @@
     align-items: center;
     padding: 0% 0%;
     margin-bottom: 7%;
+    margin-top: 0;
     margin-top: 2%;
   }
 
 
 .containerLayout{
   width: 100%;
-  background: linear-gradient(0deg, var(--background-color), #3f9b52, var(--background-color));
-  padding-bottom: 21%;
+  padding-bottom: 2%;
 }
 
 }
