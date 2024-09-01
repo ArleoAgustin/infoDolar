@@ -1,8 +1,7 @@
 import Title from "./title/Title";
 import Icon from './iconHeader/IconHeader'
 import style from './Header.module.css'
-import ButtonTheme from "./buttonToggleTheme/ButtonTheme";
-
+import SwitchTheme from "../Button/switchTheme/SwitchTheme";
 export function Header() {
 
 
@@ -13,7 +12,8 @@ export function Header() {
     <Icon />  
     <Title/>
     </div>
-    <ButtonTheme/>
+    <SwitchTheme/>
+    
     </div>
     </>
   );

@@ -1,0 +1,86 @@
+.switchContainer {
+  width: 75px;
+  height: 35px;
+  scale: 80%;
+}
+
+.input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.label {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6px;
+  background: #222;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.3s;
+}
+
+.icon {
+  font-size: 18px;
+  transition: color 0.8s, transform 0.8s;
+  color: wheat;
+}
+
+.icon:first-child {
+  color: gold;
+}
+
+.icon:last-child {
+  color: #fff;
+}
+
+.ball {
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  top: 5px;
+  left: 5px;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform 0.8s, background 0.8s;
+}
+
+/* Transforms for icons and ball based on checked state */
+.input:checked + .label {
+  background: #c0c0c0;
+}
+
+.input:checked + .label .fa-sun {
+  opacity: 0;
+  transform: translateX(-43px) rotate(160deg);
+}
+
+.input:checked + .label .fa-moon {
+  opacity: 1;
+  transform: translateX(0) rotate(0);
+}
+
+.input:checked + .label .ball {
+  transform: translateX(40px);
+}
+
+.label .fa-sun {
+  opacity: 1;
+  transform: translateX(43px) rotate(250deg);
+}
+
+.label .fa-moon {
+  opacity: 0;
+  transform: translateX(43px) rotate(250deg);
+}
+
+@media (min-width: 992px) {
+  
+
+}
