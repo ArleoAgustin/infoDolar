@@ -3,6 +3,7 @@
 /* Estilos generales para el menú */
 .menuContainer {
     position: relative;
+    margin-right: 3%;
   }
   
   /* Estilos del botón de hamburguesa */
@@ -17,7 +18,7 @@
   
   /* Barras del botón de hamburguesa */
   .hamburgerBar {
-    width: 30px;
+    width: 24px;
     height: 3px;
     background: var(--text-color);
     transition: 0.3s;
@@ -33,9 +34,9 @@
     display: block;
     position: absolute;
     top: 243%;
-    right: 0;
+    right: -15px;
     height: 800px;
-    width: 200px;
+    width: 255px;
     color: var(--text-color);
     border: none;
     background: var(--calculatorBackground);

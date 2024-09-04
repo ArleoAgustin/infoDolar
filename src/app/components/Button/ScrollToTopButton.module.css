@@ -1,7 +1,7 @@
 .scrollToTopButton {
   position: fixed;
-  bottom: 20px; /* Ajusta la distancia desde la parte inferior */
-  right: 5px;
+  bottom: 48px;
+  right: 12px;
   background-color: var(--colorButtonScroll);
   color: var(--background-color);
   border: none;
