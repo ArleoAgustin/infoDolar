@@ -3,7 +3,7 @@
   position: fixed;
   padding: 3% 0%;
   align-items: center;
-  background-color: #2b803e;
+  background-color: var(--headerColor);
   justify-content: space-between;
 
   width: 100%; /* Ancho completo del viewport */
@@ -18,18 +18,25 @@
   margin-left: 1.5%;
 }
 
+.containerBtn{
+  display: flex;
+  flex-direction: row;
+  width: 10%;
+  justify-content: space-between;
+}
+
 @media (min-width: 992px) {
   .containerHeader {
     display: flex;
     padding: 1% 0%;
     align-items: center;
-    background-color: #2b803e;
+    background: var(--headerColor);
     margin-bottom: 2%;
     justify-content: space-between;
-    top: 0; /* Colócalo en la parte superior */
-    left: 0; /* Alineación a la izquierda */
-    width: 100%; /* Ancho completo del viewport */
-    z-index: 1000; /* Asegúrate de que esté encima de otros elementos */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
   }
 
   .iconTitle {

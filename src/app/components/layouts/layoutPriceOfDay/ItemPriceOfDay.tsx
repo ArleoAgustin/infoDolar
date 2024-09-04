@@ -48,13 +48,12 @@ interface DolarProps {
       <div onClick={handleClick} className={style.containerInfo}>
         <h4 className={style.h4}>Dólar {nombre}</h4>
         <div className={style.containerSellBuy}>
-        <p className={style.venta}>
-          Venta <span className={style.span} >${venta}</span>
-        </p>
         <p className={style.compra}>
           Compra <span className={style.span} >${compra}</span>
         </p>
-
+        <p className={style.venta}>
+          Venta <span className={style.span} >${venta}</span>
+        </p>
         </div>
         <p className={style.verMas}>Presionar para ver detalles</p>
       </div>

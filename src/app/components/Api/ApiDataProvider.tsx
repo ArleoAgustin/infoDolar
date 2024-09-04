@@ -25,10 +25,13 @@ const dTarjeta = 'El "Dólar Tarjeta" es una cotización especial del dólar uti
 descriptions.set('Oficial', dOficial);
 descriptions.set('Blue', dBlue);
 descriptions.set('Bolsa', dBolsa);
-descriptions.set('Contado con liquidación', dCCL)
-descriptions.set('Mayorista',dM);
-descriptions.set('Cripto', dCripto)
-descriptions.set('Tarjeta', dTarjeta)
+descriptions.set('Contado con liquidación', dCCL);
+descriptions.set('Mayorista', dM);
+descriptions.set('Cripto', dCripto);
+descriptions.set('Tarjeta', dTarjeta);
+
+// Variable de almacenamiento en caché
+let cachedData: DatesDolar[] | null = null;
 
 function DataProvider({ children }: DataProviderProps) {
   const [data, setData] = useState<DatesDolar[]>([]);
@@ -36,31 +39,37 @@ function DataProvider({ children }: DataProviderProps) {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch('https://dolarapi.com/v1/dolares')
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error('Error al obtener los datos');
-        }
-        return response.json();
-      })
-      .then((data) => {
-        const mappedData = data
-          .map((dolar: DatesDolar) => ({
-            nombre: dolar.nombre,
-            compra: dolar.compra,
-            venta: dolar.venta,
-            description: descriptions.get(dolar.nombre),
-            fechaActualizacion: dolar.fechaActualizacion,
-          }))
-          .filter((dolar : DatesDolar) => dolar.nombre !== 'Contado con liquidación');
-
-        setData(mappedData);
-        setLoading(false);
-      })
-      .catch((error) => {
-        setError(error.message);
-        setLoading(false);
-      });
+    if (cachedData) {
+      setData(cachedData);
+      setLoading(false);
+    } else {
+      fetch('https://dolarapi.com/v1/dolares')
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error('Error al obtener los datos');
+          }
+          return response.json();
+        })
+        .then((data) => {
+          const mappedData = data
+            .map((dolar: DatesDolar) => ({
+              nombre: dolar.nombre === 'Bolsa' ? 'MEP' : dolar.nombre,
+              compra: dolar.compra,
+              venta: dolar.venta,
+              description: descriptions.get(dolar.nombre),
+              fechaActualizacion: dolar.fechaActualizacion,
+            }))
+            .filter((dolar: DatesDolar) => dolar.nombre !== 'Contado con liquidación');
+            //si el dolar es bolsa, necesito que le cambie el nomnbre MEP
+          cachedData = mappedData; // Guardar en caché
+          setData(mappedData);
+          setLoading(false);
+        })
+        .catch((error) => {
+          setError(error.message);
+          setLoading(false);
+        });
+    }
   }, []);
 
   return <>{children(data, loading, error)}</>;

@@ -15,6 +15,9 @@ body{
 }
 
 [data-theme='dark'] {
+  --menuHamburgerColor: #181a18;
+  --calculatorBackground:#181a18;
+  --headerColor: #181a18;
   --background: linear-gradient(0deg, var(--background-color), #1e3f25, var(--background-color));
   --background-color: #000000e8;
   --icon-color: #ffffff; /* Color para los íconos en el tema oscuro */
@@ -28,6 +31,9 @@ body{
 
 /* Estilos para el modo oscuro */
 [data-theme='light'] {
+  --menuHamburgerColor: #f3f7f4;
+  --calculatorBackground: #f3f7f4;
+  --headerColor: #f3f7f4;
   --background: linear-gradient(0deg, var(--background-color), #437d4f, var(--background-color));
   --background-color: #ffffff;
   --text-color: #000000;

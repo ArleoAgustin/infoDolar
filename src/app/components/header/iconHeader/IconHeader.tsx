@@ -1,16 +1,10 @@
-import { useState, useEffect } from 'react';
 import style from './IconHeader.module.css';
 import logo from '../../../assets/iconH.png';
 import logoLigth from '../../../assets/iconLigth.png';
+import { useTheme } from '../../../context/ThemeContext'
 
 function IconHeader() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  // Efecto para escuchar cambios en el tema
-  useEffect(() => {
-    const currentTheme = document.documentElement.getAttribute('data-theme');
-    setIsDarkMode(currentTheme === 'dark');
-  }, []);
+  const { theme } = useTheme(); // Usa el contexto para obtener el tema actual
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -23,7 +17,7 @@ function IconHeader() {
     <img
       onClick={scrollToTop}
       className={style.img}
-      src={isDarkMode ? logo : logoLigth}
+      src={theme === 'dark' ? logo : logoLigth} // Usa el valor del tema del contexto
       alt="Logo"
     />
   );

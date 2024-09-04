@@ -1,35 +1,23 @@
-import { useState, useEffect } from 'react';
+import { useTheme } from '../../../context/ThemeContext'; // Asegúrate de importar la ruta correcta
 import style from './SwitchTheme.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 
 function SwitchTheme() {
-  // Inicializar isDarkMode como true para el modo oscuro por defecto
-  const [isDarkMode, setIsDarkMode] = useState(true);
-
-  // Cambiar el tema al montar el componente
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
-  }, [isDarkMode]);
-
-  const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
-    document.documentElement.setAttribute('data-theme', isDarkMode ? 'light' : 'dark');
-  };
+  const { theme, toggleTheme } = useTheme(); // Usa el contexto para obtener el tema actual y la función para cambiarlo
 
   return (
     <div className={style.switchContainer}>
       <input 
         type="checkbox" 
         id="switch" 
-        checked={isDarkMode} 
+        checked={theme === 'dark'} 
         onChange={toggleTheme} 
         className={style.input} 
       />
       <label className={style.label} htmlFor="switch">
-      <FontAwesomeIcon icon={faSun} className={style.icon} />
+        <FontAwesomeIcon icon={faSun} className={style.icon} />
         <FontAwesomeIcon icon={faMoon} className={style.icon} />
-
         <span className={style.ball}></span>
       </label>
     </div>

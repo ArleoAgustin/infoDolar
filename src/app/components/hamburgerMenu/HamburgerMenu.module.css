@@ -1,0 +1,121 @@
+/* HamburgerMenu.module.css */
+
+/* Estilos generales para el menú */
+.menuContainer {
+    position: relative;
+  }
+  
+  /* Estilos del botón de hamburguesa */
+  .hamburgerButton {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  /* Barras del botón de hamburguesa */
+  .hamburgerBar {
+    width: 30px;
+    height: 3px;
+    background: var(--text-color);
+    transition: 0.3s;
+  }
+  
+  /* Transición cuando el menú está abierto */
+  .hamburgerButton .open {
+    background: var(--text-color);
+  }
+  
+  /* Estilos del menú desplegable */
+  .menu {
+    display: block;
+    position: absolute;
+    top: 243%;
+    right: 0;
+    height: 800px;
+    width: 200px;
+    color: var(--text-color);
+    border: none;
+    background: var(--calculatorBackground);
+    box-shadow: -1px -1px 14px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateX(100%); /* Menú fuera de vista por defecto */
+    opacity: 0;
+  }
+  
+  /* Mostrar el menú cuando está abierto */
+  .menu.open {
+    transform: translateX(0); /* Mueve el menú a la vista */
+    opacity: 1;
+  }
+  
+  /* Estilos de la lista de elementos del menú */
+  .menuList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menuList li {
+    padding: 10px;
+    margin: 8% 0%;
+    width: 100%;
+  }
+  
+  .menuList li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    transition: background 0.3s;
+  }
+  
+  .menuList li a:hover {
+    background: #f0f0f0;
+  }
+
+  .h5{
+    margin: 0;
+  }
+
+  .switch{
+    border-top: 1px solid rgba(128, 128, 128, 0.539)
+  }
+  
+  /* Consultas de medios para dispositivos móviles */
+  @media (min-width: 768px) {
+    .hamburgerButton {
+      display: none; /* Ocultar el botón de hamburguesa en pantallas grandes */
+    }
+  
+    .menu {
+      display: flex;
+      position: static;
+      width: auto;
+      box-shadow: none;
+      transform: none; /* Sin desplazamiento en pantallas grandes */
+      opacity: 1;
+    }
+  
+    .menuList {
+      display: flex;
+      gap: 20px;
+    }
+  
+    .menuList li {
+      padding: 0;
+    }
+  
+    .menuList li a {
+      padding: 10px 20px;
+      border-radius: 4px;
+      background-color: #f5f5f5;
+    }
+  
+    .menuList li a:hover {
+      background: #ddd;
+    }
+  }
+  

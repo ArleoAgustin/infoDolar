@@ -43,6 +43,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+    font-size: 100%;
   }
 
   .IconArrowDown{
@@ -53,6 +54,7 @@
     font-size: 160%;
     margin-bottom: 1%;
     text-align: center;
+    margin-top: 3%;
   }
 
   .containerH2{

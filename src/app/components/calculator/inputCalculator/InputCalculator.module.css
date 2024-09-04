@@ -1,0 +1,32 @@
+.sellBuy{
+    display: flex;
+    width: 100%;
+    margin: 1% 0 0 0;
+    justify-content: space-between;
+}
+
+.containerInput{
+    width: 100%;
+    margin-bottom: 10%;
+    border-bottom: 1px solid;
+    padding-bottom: 14px;
+}
+
+.h5{
+    margin: 0;
+    text-align: justify;
+    font-size: 85%;
+}
+
+.p{
+    margin: 0;
+    font-size: 77%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.span{
+    font-size: 123%;
+    font-weight: 600;
+}
