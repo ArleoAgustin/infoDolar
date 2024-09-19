@@ -17,7 +17,7 @@ function LandingPage() {
     // Simula un retraso de carga con setTimeout
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 3000); // 2 segundos de carga
+    }, 1200); // 2 segundos de carga
 
     return () => clearTimeout(timer); // Limpia el timer al desmontar el componente
   }, [theme]);
